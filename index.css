@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    overflow: overlay;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0000ff;
+    border-radius: 10px;
+}

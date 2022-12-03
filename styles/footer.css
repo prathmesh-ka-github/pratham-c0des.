@@ -1,0 +1,28 @@
+.footer-container {
+    display: flex;
+    height: 10vh;
+    background-color: #1c1c1c;
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+.mail {
+    position: absolute;
+    right: 50px;
+    top: 45%;
+    transition: color 400ms;
+    cursor: pointer;
+}
+.mail:hover {
+    color: #3a4aff;
+}
+@media screen and (max-width:600px) {
+    .mail{
+        top: 70%;
+    }
+    .footer-container{
+        height: 20vh;
+    }
+}

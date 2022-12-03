@@ -1,0 +1,201 @@
+.main-container {
+    position: relative;
+    top: 70px;
+}
+
+.absolute {
+    position: absolute;
+    top: 6vw;
+    left: 7vw;
+    width: 80vw;
+    cursor: pointer;
+    transition: left 1s;
+    height: 40vh;
+    z-index: 5;
+    animation: 1s ease-out 0s 1 onload;
+}
+.main-container a:hover {
+    background-color: #1a0da2;
+}
+
+.main-container a {
+    position: absolute;
+    top: 300px;
+    left: 7vw;
+    z-index: 5;
+    transition: background-color 300ms;
+    border: none;
+    background-color: #0818c9;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+}
+
+.heading {
+    font-size: 80px;
+}
+
+.absolute:hover .subtxt{
+    left: 60px;
+}
+.absolute:hover{
+    left: 5vw;
+}
+.main-container button:hover .subtxt{
+    left: 60px;
+}
+.subtxt {
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    transition: left 1s;
+}
+
+/*          ABOUT         */
+.about-container {
+    background: #5c69ff;
+    background: linear-gradient(0deg, #5c69ff 0%, #090078 100%);
+    background: -moz-linear-gradient(90deg, #5c69ff 0%, #090078 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5C69FF", endColorstr="#090078", GradientType=1 );
+    font-size: 26px;
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    border-radius: 140px 0 0 0;
+    padding-bottom: 120px;
+}
+.head {
+    font-size: 50px;
+    color: white;
+}
+.first {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.about {
+    padding: 20px;
+    margin-right: 100px;
+    width: 800px;
+    background-color: #5c69ff;
+    border-radius: 50px;
+}
+
+.book-img-container{
+    cursor: pointer;
+}
+
+.book-img{
+    width: 320px;
+    border-radius: 50px;
+}
+
+
+.hobbys {
+    width: 850px;
+    padding: 20px;
+    background-color: #3342e0;
+    border-radius: 50px;
+}
+
+.hobby-img-container{
+    cursor: pointer;
+    margin-right: 80px;
+}
+ul {
+    margin: 0px;
+}
+
+.hobby-img{
+    width: 500px;
+    border-radius: 50px;
+}
+
+.socials {
+    width: 850px;
+    padding: 20px;
+    background-color: #231ebf;
+    border-radius: 50px;
+    margin-right: 100px;
+}
+
+.social-img-container{
+    cursor: pointer;
+}
+.social-img{
+    width: 350px;
+    border-radius: 50px;
+}
+.linkss {
+    color: black;
+    border-bottom: transparent 3px solid;
+    transition: color 300ms;
+}
+
+.linkss:hover {
+    color: white;
+}
+
+@media screen and (max-width:600px) {
+    .heading {
+        font-size: 30px;
+        width: 250px;
+    }
+    .subtxt {
+        font-size: 17px;
+        margin-top: 80px;
+        color: white;
+        top: 120px;
+    }
+    .about-container {
+        border-radius: 30px 0 0 0;
+    }
+    .main-container a {
+        margin-top: 10vw;
+        font-size: 14px;
+        padding: 12px;
+        top: 70px;
+    }
+    .absolute {
+        height: 40vh;
+        
+    }
+    .head {
+        margin-top: 250px;
+        font-size: 30px;
+    }
+    .about-container p {
+        font-size: 20px;
+    }
+    .about {
+        width: 300px;
+        left: 20px;
+        margin: 0 20px 0 20px;
+    }
+    .hobbys {
+        width: 300px;
+        left: 20px;
+    }
+    .socials {
+        width: 300px;
+        left: 20px;
+        margin: 0 20px 0 20px;
+    }
+    .book-img-container{
+        display: none;
+    }
+    .social-img-container{
+        display: none;
+    }
+    .hobby-img-container{
+        display: none;
+    }
+    .head{
+        margin-top: 0;
+    }
+}
