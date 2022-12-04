@@ -131,14 +131,20 @@ ul {
     width: 350px;
     border-radius: 50px;
 }
-.linkss {
-    color: black;
-    border-bottom: transparent 3px solid;
-    transition: color 300ms;
+
+.linkss svg{
+    transition: fill 300ms;
 }
 
-.linkss:hover {
-    color: white;
+.linkss:hover svg {
+    fill: white;
+}
+.linkss-container{
+    display: flex;
+}
+.linkss-container div{
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width:600px) {
@@ -197,5 +203,8 @@ ul {
     }
     .head{
         margin-top: 0;
+    }
+    .linkss-container{
+        flex-direction: row;
     }
 }
