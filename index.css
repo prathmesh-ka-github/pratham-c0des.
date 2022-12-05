@@ -24,7 +24,7 @@ body {
     align-items: center;
     z-index: 50;
     opacity: 1;
-    transition: all 1s;
+    transition: all 500ms;
 }
 
 .loader {

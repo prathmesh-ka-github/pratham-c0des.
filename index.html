@@ -142,8 +142,10 @@
         window.addEventListener("load",function(){
             setTimeout(function(){
                 loader.style.opacity = "0";
-                loader.style.display = "none";
             },400);
+            setTimeout(function(){
+                loader.style.display = "none";
+            },800);
   
         })
     </script>
