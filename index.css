@@ -12,3 +12,41 @@ body {
     background: #0000ff;
     border-radius: 10px;
 }
+.loader-container {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.rotatingLoader {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border-top: 5px solid blue;
+    animation: round 700ms linear infinite;
+}
+
+@keyframes round {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}

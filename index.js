@@ -9,3 +9,7 @@ function ham() {
         menu.style.top = '60px';
     }
 }
+
+$(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow")
+})

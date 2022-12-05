@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/footer.css">
 
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
 </head>
 <body>
     <navbar class="nav-bar-container">
@@ -123,6 +123,11 @@
         <div>Copyright © 2022 - All right reserved by prathmesh-ka-github on Github Pages.</div>
         <div class="mail">connect.prathmesh905@gmail.com</div>
     </footer>
+    <div class="loader-container" id="loader-container"
+        <div class="loader">
+            <div class="rotatingLoader"></div>
+        </div>
+    </div>
 </body>
 
     <script>
@@ -132,6 +137,15 @@
                 behavior:'smooth'
             });
         }
+        
+        var loader = document.getElementById("loader-container");
+        window.addEventListener("load",function(){
+            setTimeout(function(){
+                loader.style.opacity = "0";
+                loader.style.display = "none";
+            },400);
+  
+        })
     </script>
 
 </html>
