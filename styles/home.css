@@ -205,6 +205,6 @@ ul {
         margin-top: 0;
     }
     .linkss-container{
-        flex-direction: row;
+        flex-direction: column;
     }
 }
