@@ -45,6 +45,14 @@
 .pro-img-container {
     margin: 15px 10 0 10 !important;
 }
+::-webkit-scrollbar {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #383838;
+    border-radius: 10px;
+}
 
 @media screen and (max-width: 600px) {
     .pro-container {
