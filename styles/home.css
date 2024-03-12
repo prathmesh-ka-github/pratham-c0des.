@@ -62,9 +62,9 @@
     background-color: #090078;
 
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5C69FF", endColorstr="#090078", GradientType=1 );
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 400;
-    line-height: 35px;
+    line-height: 32px;
     width: 100%;
     padding: 50px 0;
     display: flex;
@@ -81,7 +81,7 @@
 }
 .first {
     display: flex;
-    margin-top: 100px;
+    margin: 60px 0px;
     justify-content: center;
 }
 
@@ -104,12 +104,6 @@
 
 
 
-.projects-head {
-    font-size: 50px;
-    font-weight: 500;
-    margin: 80px;
-    text-align: center;
-}
 
 .scroller {
     width: 85%;
@@ -155,26 +149,13 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.projects-head {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 60px;
+    margin-bottom: 140px;
+    text-align: center;
+}
 
 
 
@@ -197,6 +178,55 @@ ul {
     width: 500px;
     border-radius: 50px;
 }
+
+.tags-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0px;
+}
+
+.tags-container .head {
+    margin: 80px 0px 40px 0px;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+
+
+.tag {
+    margin: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    border: 2px solid #0f74ee;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .socials {
     width: 850px;

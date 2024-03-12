@@ -31,7 +31,7 @@
         </div>
         <div class="nav-links">
             <a href="index.html"><div class="nav-elements current">HOME</div></a>
-            <a href="projects.html"> <div class="nav-elements">PROJECTS</div></a>
+            <button onclick="scrollProjects()" > <div class="nav-elements">PROJECTS</div></button>
             <button onclick="scrollConnect()"> <div class="nav-elements">CONNECT</div></button>
             <a href="hire.html"> <div class="nav-elements">HIRE ME</div></a>
             <div class="ham-menu">
@@ -59,7 +59,7 @@
         <div class="first">
             <div class="about">
                 <div class="head">ABOUT</div>
-                <p>I am a 20.y.o Software developer interested in Web Development and Machine learning based in India! <br>
+                <p>I am a 20.y.o Software developer interested in Web Development and Machine learning based in India!
                     I focus mostly learning through projects and I am facinated by cool new technologies.
                     I am a determined life long learner, completely creative and solution seeking person.
                 </p>
@@ -176,7 +176,7 @@
                 <!-- </marquee> -->
             </div>
         </div>
-        <div class="projects-head">Projects</div>
+        <div class="projects-head">MY PROJECTS</div>
 
         <div class="first">
             <div class="hobby-img-container">
@@ -200,6 +200,32 @@
                 </p>
             </div>
         </div>
+
+        <div class="tags-container">
+            <div class="tags">
+                <div class="tag">C</div>
+                <div class="tag">Java</div>
+                <div class="tag">Python</div>
+                <div class="tag">HTML</div>
+                <div class="tag">CSS</div>
+                <div class="tag">JavaScript</div>
+                <div class="tag">TypeScript</div>
+                <div class="tag">ReactJS</div>
+                <div class="tag">TailwindCSS</div>
+                <div class="tag">Bootstrap</div>
+                <div class="tag">MongoDB</div>
+                <div class="tag">PostgreSQL</div>
+                <div class="tag">MySQL</div>
+                <div class="tag">ExpressJS</div>
+                <div class="tag">Docker</div>
+                <div class="tag">Git</div>
+                <div class="tag">Figma</div>
+                <div class="tag">Adobe Photoshop</div>
+                <div class="tag">Adobe Illustrator</div>
+            </div>
+            <div class="head">TECHNOLOGIES</div>
+        </div>
+
         <div class="first">
             <div class="socials">
                 <div class="head">LET'S SOCIALIZE!</div>
@@ -250,11 +276,40 @@
 </body>
 
     <script>
+
+        window.addEventListener('scroll', (e) => {
+            console.log(window.pageYOffset)
+
+            // projects Yoffset is 1090
+        })
+
+
         function scrollConnect(){
             window.scrollBy({
-                top: 2000,
+                top: 10000,
                 behavior:'smooth'
             });
+        }
+        function scrollProjects(){
+
+            if (window.pageYOffset<1090) {
+                let scrollto = 1090 - window.pageYOffset;
+                window.scrollBy({top: scrollto, behavior:'smooth'})
+            }
+            else if (window.pageYOffset > 1090){
+                let scrollto = window.pageYOffset - 1090;
+                window.scrollBy({top: -scrollto, behavior:'smooth'})
+            }
+
+
+            // window.scrollBy({
+            //     top: -10000,
+            // });
+            
+            // window.scrollBy({
+            //     top: 1300,
+            // behavior:'smooth'
+            // });
         }
         
         var loader = document.getElementById("loader-container");
