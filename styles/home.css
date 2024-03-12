@@ -33,7 +33,7 @@
 }
 
 .heading {
-    font-size: 80px;
+    font-size: 70px;
 }
 
 .absolute:hover .subtxt{
@@ -46,20 +46,24 @@
     left: 60px;
 }
 .subtxt {
-    font-size: 30px;
+    line-height: 35px;
+    margin-top: 10px;
+    font-size: 22px;
     position: absolute;
     left: 0;
     transition: left 1s;
 }
 
+
+
 /*          ABOUT         */
 .about-container {
-    background: #5c69ff;
-    background: linear-gradient(0deg, #5c69ff 0%, #090078 100%);
-    background: -moz-linear-gradient(90deg, #5c69ff 0%, #090078 100%);
+    background-color: #090078;
 
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5C69FF", endColorstr="#090078", GradientType=1 );
     font-size: 26px;
+    font-weight: 400;
+    line-height: 35px;
     width: 100%;
     padding: 50px 0;
     display: flex;
@@ -67,10 +71,12 @@
     margin-top: 70px;
     border-radius: 140px 0 0 0;
     padding-bottom: 120px;
+    color: white;
 }
 .head {
     font-size: 50px;
-    color: white;
+    font-weight: 500;
+    /* color: white; */
 }
 .first {
     display: flex;
@@ -79,10 +85,10 @@
 }
 
 .about {
-    padding: 20px;
+    padding: 40px 50px;
     margin-right: 100px;
     width: 800px;
-    background-color: #5c69ff;
+    background-color: #0f74ee;
     border-radius: 50px;
 }
 
@@ -98,8 +104,8 @@
 
 .hobbys {
     width: 850px;
-    padding: 20px;
-    background-color: #3342e0;
+    padding: 40px 50px;
+    background-color: #0f74ee;
     border-radius: 50px;
 }
 
@@ -118,8 +124,8 @@ ul {
 
 .socials {
     width: 850px;
-    padding: 20px;
-    background-color: #231ebf;
+    padding: 40px 50px;
+    background-color: #0f74ee;
     border-radius: 50px;
     margin-right: 100px;
 }
@@ -154,12 +160,14 @@ ul {
     }
     .subtxt {
         font-size: 17px;
+        line-height: 22px;
         margin-top: 80px;
         color: white;
         top: 120px;
     }
     .about-container {
         border-radius: 30px 0 0 0;
+        line-height: 28px;
     }
     .main-container a {
         margin-top: 10vw;
@@ -179,15 +187,18 @@ ul {
         font-size: 20px;
     }
     .about {
+        padding: 30px;
         width: 300px;
         left: 20px;
         margin: 0 20px 0 20px;
     }
     .hobbys {
+        padding: 30px;
         width: 300px;
         left: 20px;
     }
     .socials {
+        padding: 30px;
         width: 300px;
         left: 20px;
         margin: 0 20px 0 20px;
