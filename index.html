@@ -278,7 +278,7 @@
     <script>
 
         window.addEventListener('scroll', (e) => {
-            console.log(window.pageYOffset)
+            // console.log(window.pageYOffset)
 
             // projects Yoffset is 1090
         })
@@ -292,13 +292,15 @@
         }
         function scrollProjects(){
 
-            if (window.pageYOffset<1090) {
-                let scrollto = 1090 - window.pageYOffset;
+            if (window.pageYOffset<1300) {
+                let scrollto = 1300 - window.pageYOffset;
                 window.scrollBy({top: scrollto, behavior:'smooth'})
+                console.warn(scrollto)
             }
-            else if (window.pageYOffset > 1090){
-                let scrollto = window.pageYOffset - 1090;
+            else if (window.pageYOffset > 1300){
+                let scrollto = window.pageYOffset - 1300;
                 window.scrollBy({top: -scrollto, behavior:'smooth'})
+                console.warn(scrollto)
             }
 
 

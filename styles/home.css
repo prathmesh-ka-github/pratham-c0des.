@@ -105,9 +105,6 @@
 
 
 
-.scroller {
-    width: 85%;
-}
 
 .scroller__inner {
     display: flex;
@@ -127,6 +124,7 @@
 
 .scroller {
     /* border: 5px solid lime; */
+    width: 85%;
     overflow: hidden;
     mask: linear-gradient(90deg, transparent, #090078 20%, #090078 80%, transparent);
     -webkit-mask: linear-gradient(90deg, transparent, #090078 20%, #090078 80%, transparent);
@@ -269,7 +267,7 @@ ul {
         line-height: 22px;
         margin-top: 80px;
         color: white;
-        top: 120px;
+        top: 102px;
     }
     .about-container {
         border-radius: 30px 0 0 0;
@@ -298,11 +296,36 @@ ul {
         left: 20px;
         margin: 0 20px 0 20px;
     }
+    .projects-head {
+        font-size: 30px;
+        margin: 0px;
+        margin-bottom: 90px;
+    }
+    .scroller {
+        /* border: 5px solid lime; */
+        width: 95%;
+        overflow: hidden;
+        mask: linear-gradient(90deg, transparent, #090078 10%, #090078 90%, transparent);
+        -webkit-mask: linear-gradient(90deg, transparent, #090078 10%, #090078 90%, transparent);
+    }
+
     .hobbys {
         padding: 30px;
         width: 300px;
         left: 20px;
     }
+
+    .tag {
+        padding: 15px;
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    .tags {
+        width: 90vw;
+    }
+
+
     .socials {
         padding: 30px;
         width: 300px;
