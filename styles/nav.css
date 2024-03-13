@@ -39,7 +39,6 @@ a {
     cursor: pointer;
     border-bottom: 5px solid transparent;
     transition: border 400ms;
-    width: 90px;
     text-align: center;
 }
 .nav-elements:hover {

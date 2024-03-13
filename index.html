@@ -68,6 +68,8 @@
                 <img class="book-img" src="essentials/man-reading-book (2).jpg" alt="">
             </div>
         </div>
+        <div class="projects-head">MY PROJECTS</div>
+
         <div class="first">
             <div class="scroller">
                 <!-- <marquee behavior="" direction=""> -->
@@ -176,7 +178,6 @@
                 <!-- </marquee> -->
             </div>
         </div>
-        <div class="projects-head">MY PROJECTS</div>
 
         <div class="first">
             <div class="hobby-img-container">
@@ -202,6 +203,8 @@
         </div>
 
         <div class="tags-container">
+
+            <div class="head">TECHNOLOGIES</div>
             <div class="tags">
                 <div class="tag">C</div>
                 <div class="tag">Java</div>
@@ -223,7 +226,6 @@
                 <div class="tag">Adobe Photoshop</div>
                 <div class="tag">Adobe Illustrator</div>
             </div>
-            <div class="head">TECHNOLOGIES</div>
         </div>
 
         <div class="first">
@@ -278,7 +280,7 @@
     <script>
 
         window.addEventListener('scroll', (e) => {
-            // console.log(window.pageYOffset)
+            console.log(window.pageYOffset)
 
             // projects Yoffset is 1090
         })
@@ -292,13 +294,13 @@
         }
         function scrollProjects(){
 
-            if (window.pageYOffset<1300) {
-                let scrollto = 1300 - window.pageYOffset;
+            if (window.pageYOffset<1310) {
+                let scrollto = 1310 - window.pageYOffset;
                 window.scrollBy({top: scrollto, behavior:'smooth'})
                 console.warn(scrollto)
             }
-            else if (window.pageYOffset > 1300){
-                let scrollto = window.pageYOffset - 1300;
+            else if (window.pageYOffset > 1310){
+                let scrollto = window.pageYOffset - 1310;
                 window.scrollBy({top: -scrollto, behavior:'smooth'})
                 console.warn(scrollto)
             }
@@ -318,10 +320,10 @@
         window.addEventListener("load",function(){
             setTimeout(function(){
                 loader.style.opacity = "0";
-            },400);
+            },300);
             setTimeout(function(){
                 loader.style.display = "none";
-            },800);
+            },700);
         })
     </script>
 
