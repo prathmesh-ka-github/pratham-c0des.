@@ -299,27 +299,29 @@
             });
         }
         function scrollProjects(){
-
-            if (window.pageYOffset<1340) {
+            if (window.screen.width < 600) {
+                if (window.pageYOffset<780) {
+                let scrollto = 780 - window.pageYOffset;
+                window.scrollBy({top: scrollto, behavior:'smooth'})
+                console.warn(scrollto)
+                }
+                else if (window.pageYOffset > 780){
+                    let scrollto = window.pageYOffset - 780;
+                    window.scrollBy({top: -scrollto, behavior:'smooth'})
+                    console.warn(scrollto)
+                }
+            } else {
+                if (window.pageYOffset<1340) {
                 let scrollto = 1340 - window.pageYOffset;
                 window.scrollBy({top: scrollto, behavior:'smooth'})
                 console.warn(scrollto)
+                }
+                else if (window.pageYOffset > 1340){
+                    let scrollto = window.pageYOffset - 1340;
+                    window.scrollBy({top: -scrollto, behavior:'smooth'})
+                    console.warn(scrollto)
+                }
             }
-            else if (window.pageYOffset > 1340){
-                let scrollto = window.pageYOffset - 1340;
-                window.scrollBy({top: -scrollto, behavior:'smooth'})
-                console.warn(scrollto)
-            }
-
-
-            // window.scrollBy({
-            //     top: -10000,
-            // });
-            
-            // window.scrollBy({
-            //     top: 1300,
-            // behavior:'smooth'
-            // });
         }
         
         var loader = document.getElementById("loader-container");
