@@ -63,7 +63,7 @@
 
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5C69FF", endColorstr="#090078", GradientType=1 );
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 32px;
     width: 100%;
     padding: 50px 0;
@@ -129,7 +129,7 @@
 .scroller {
     /* border: 5px solid lime; */
     width: 85%;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     overflow: hidden;
     mask: linear-gradient(90deg, transparent, #090078 20%, #090078 80%, transparent);
     -webkit-mask: linear-gradient(90deg, transparent, #090078 20%, #090078 80%, transparent);
@@ -155,11 +155,13 @@
 .projects-head {
     font-size: 50px;
     font-weight: 500;
-    /* margin: 10px; */
-    margin-top: 140px;
+    margin-top: 100px;
     text-align: center;
 }
-
+.projects-subtxt {
+    font-size: 18px;
+    font-weight: 300;
+}
 
 
 .hobbys {
@@ -295,6 +297,7 @@ ul {
     }
     .about-container p {
         font-size: 20px;
+        font-weight: 200;
     }
     .about {
         padding: 30px;
