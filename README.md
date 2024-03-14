@@ -7,6 +7,6 @@ Deployed on github pages.
 
 
 # TODO CHK LIST: 
-    1. Projects on main page with X-Scroll cards.
-    2. Add a skills/technologies section below about section.
-    3. 
+1. ~~Projects on main page with X-Scrollcards~~  
+2. ~~Add a skills/technologies section belowabout section.~~
+3. 
