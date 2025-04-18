@@ -170,6 +170,10 @@
     background-color: #0f74ee;
     border-radius: 30px;
 }
+.hobby-list {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .hobby-img-container{
     cursor: pointer;
@@ -305,6 +309,9 @@ ul {
         padding: 30px;
         width: 300px;
         left: 20px;
+    }
+    .hobby-list {
+        display: block;    
     }
 
     .tag {
