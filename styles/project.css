@@ -25,7 +25,7 @@
     color: white;
     border-radius: 20px;
     padding: 10px;
-    font-size: 30px;
+    font-size: 1.2em;
     background-color: #0f74ee;
     display: flex;
     justify-content: center;
@@ -53,12 +53,12 @@
     background: #383838;
     border-radius: 10px;
 }
-.projects-head {
+/* .projects-head {
     font-size: 50px;
     font-weight: 500;
     margin-top: 120px;
     text-align: center;
-}
+} */
 
 @media screen and (max-width: 600px) {
 
