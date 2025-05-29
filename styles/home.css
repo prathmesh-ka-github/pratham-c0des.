@@ -73,7 +73,7 @@
 }
 .first {
     display: flex;
-    margin: 150px 0px;
+    padding: 140px 0px;
     justify-content: center;
 }
 .about {
@@ -130,7 +130,7 @@
 .projects-head {
     font-size: 2.4em;
     font-weight: 500;
-    margin-top: 100px;
+    padding-top: 130px;
     text-align: center;
 }
 .projects-subtxt {
@@ -253,7 +253,7 @@ ul {
     .projects-head {
         font-size: 30px;
         margin: 0px;
-        margin-top: 90px;
+        padding-top: 50px;
         line-height: normal;
     }
     .scroller {

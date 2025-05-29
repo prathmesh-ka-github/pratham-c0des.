@@ -8,7 +8,9 @@ body {
     overflow: overlay;
     font-family: 'Rubik', sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
     background: transparent;
 }

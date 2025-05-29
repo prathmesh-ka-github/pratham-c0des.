@@ -22,7 +22,7 @@
 
     <script defer src="index.js"></script>
 </head>
-<body>
+<body id="home">
     <navbar class="nav-bar-container">
         <div class="profile">
             <a >
@@ -30,9 +30,9 @@
             </a>
         </div>
         <div class="nav-links">
-            <button onclick="scrollHome()"><div class="nav-elements">HOME</div></button>
-            <button onclick="scrollProjects()" > <div class="nav-elements">PROJECTS</div></button>
-            <button onclick="scrollConnect()"> <div class="nav-elements">CONNECT</div></button>
+            <a href="#home"><div class="nav-elements">HOME</div></a>
+            <a href="#projects"> <div class="nav-elements">PROJECTS</div></button>
+            <a href="#socials"> <div class="nav-elements">CONNECT</div></button>
             <a href="./hire.html"> <div class="nav-elements">HIRE ME</div></a>
             <div class="ham-menu">
                 <img onclick="ham()" src="essentials/menu-light.png" alt="menu">
@@ -45,7 +45,7 @@
             <a href="./hire.html" class="ham-elements"> <div>HIRE ME</div></a>
         </div>
     </navbar>
-    <main class="main-container">
+    <main class="main-container" >
         <img width="100%" src="essentials/space.gif" alt="">
         <div class="absolute">
             <div class="heading">Prathmesh Kale</div>
@@ -67,16 +67,16 @@
             </div>
         </div>
 
-        <div class="first">
+        <!-- <div class="first">
             <div class="careersection"></div>
-        </div>
+        </div> -->
 
-        <div class="projects-head">
+        <div class="projects-head" id="projects">
             <a href="./projects.html">MY PROJECTS</a>
             <p class="projects-subtxt">Click to see all 👆🏼</p>
         </div>
 
-        <div class="first" style="margin: 50px 0px;">
+        <div class="first" style="padding: 50px 0px;">
             <div class="scroller">
                     <ul class="tag-list scroller__inner">   
                         <li>
@@ -295,7 +295,7 @@
             </div>
         </div>
 
-        <div class="first">
+        <div class="first" id="socials">
             <div class="socials">
                 <div class="head">LET'S SOCIALIZE!</div>
                 <p>
@@ -345,52 +345,6 @@
 </body>
 
     <script>
-
-        window.addEventListener('scroll', (e) => {
-            console.log(window.pageYOffset)
-
-            // projects Yoffset is 1090
-        })
-
-
-        function scrollConnect(){
-            window.scrollBy({
-                top: 10000,
-                behavior:'smooth'
-            });
-        }
-        function scrollHome(){
-            window.scrollBy({
-                top: -10000,
-                behavior:'smooth'
-            });
-        }
-        function scrollProjects(){
-            if (window.screen.width < 600) {
-                if (window.pageYOffset<780) {
-                let scrollto = 780 - window.pageYOffset;
-                window.scrollBy({top: scrollto, behavior:'smooth'})
-                console.warn(scrollto)
-                }
-                else if (window.pageYOffset > 780){
-                    let scrollto = window.pageYOffset - 780;
-                    window.scrollBy({top: -scrollto, behavior:'smooth'})
-                    console.warn(scrollto)
-                }
-            } else {
-                if (window.pageYOffset<1340) {
-                let scrollto = 1340 - window.pageYOffset;
-                window.scrollBy({top: scrollto, behavior:'smooth'})
-                console.warn(scrollto)
-                }
-                else if (window.pageYOffset > 1340){
-                    let scrollto = window.pageYOffset - 1340;
-                    window.scrollBy({top: -scrollto, behavior:'smooth'})
-                    console.warn(scrollto)
-                }
-            }
-        }
-        
         var loader = document.getElementById("loader-container");
         window.addEventListener("load",function(){
             setTimeout(function(){
