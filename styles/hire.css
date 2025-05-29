@@ -10,9 +10,12 @@
     margin-top: 50px;
 }
 @media screen and (max-width:600px) {
+    .cv-container{
+        height: 80vh;
+    }
     .cv-container img{
         width: 100vw;
         height: 130vw;
-        margin-top: 80px;
+        margin-top: 50px;
     }
 }
