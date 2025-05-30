@@ -1,0 +1,70 @@
+.career-head {
+    font-size: 2.3em;
+    line-height: normal;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.careersection {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    /* height: 200px; */
+}
+
+.mainline {
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(170, 0, 170, 0) 0%, rgba(170, 0, 170, 1) 10%, rgba(173, 9, 166, 1) 90%, rgba(170, 0, 170, 0) 100%);
+}
+.rightside {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 200px 0px 100px 0px;
+}
+
+.subsections {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 400px;
+    margin: 30px 0;
+}
+
+.connectingLine {
+    margin-top: 20px;
+    width: 300px;
+    height: 7px;
+    background-color: #ad09a6;
+    border-radius: 0px 2px 2px 0px;
+    /* background: linear-gradient(90deg,rgba(170, 0, 170, 1) 0%, rgba(173, 9, 166, 1) 90%, rgba(170, 0, 170, 0) 100%); */
+    text-align: end;
+}
+.connectingLine::after {
+    content: ".....";
+    color: #ad09a6;
+    font-size: 20px;
+    border: 1px solid #ad09a6;
+    border-radius: 50%;
+    background-color: #ad09a6;
+    bottom: 12px;
+    left: 2px;
+    position: relative;
+
+}
+
+.content {
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    width: 800px;
+}
+
+.content-heading{
+    font-size: 1.5em;
+    line-height: normal;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
