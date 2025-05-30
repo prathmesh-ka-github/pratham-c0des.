@@ -33,18 +33,18 @@
     margin-top: 20px;
     width: 300px;
     height: 7px;
-    background-color: #ad09a6;
+    background-color: #c400ba;
     border-radius: 0px 2px 2px 0px;
     /* background: linear-gradient(90deg,rgba(170, 0, 170, 1) 0%, rgba(173, 9, 166, 1) 90%, rgba(170, 0, 170, 0) 100%); */
     text-align: end;
 }
 .connectingLine::after {
     content: ".....";
-    color: #ad09a6;
+    color: #c400ba;
     font-size: 20px;
-    border: 1px solid #ad09a6;
+    border: 1px solid #c400ba;
     border-radius: 50%;
-    background-color: #ad09a6;
+    background-color: #c400ba;
     bottom: 12px;
     left: 2px;
     position: relative;
