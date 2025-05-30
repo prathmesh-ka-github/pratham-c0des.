@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    margin: 30px 0;
+    margin: 40px 0;
 }
 
 .card:hover {
@@ -20,12 +20,13 @@
 
 .card {
     transition: transform 300ms, background-color 300ms, box-shadow 300ms;
-    max-width: 420px;
-    height: 320px;
+    /* max-width: 400px; */
+    max-width: 25vw;
+    height: 19vw;
     color: white;
     border-radius: 20px;
-    padding: 10px;
-    font-size: 1.2em;
+    padding: 5px;
+    font-size: 1.3em;
     background-color: #0f74ee;
     display: flex;
     justify-content: center;
@@ -43,7 +44,7 @@
     border-radius: 10px;
 }
 .pro-img-container {
-    margin: 15px 10 0 10 !important;
+    margin: 15px 5px 0 5px !important;
 }
 ::-webkit-scrollbar {
     background: transparent;
@@ -53,17 +54,8 @@
     background: #383838;
     border-radius: 10px;
 }
-/* .projects-head {
-    font-size: 50px;
-    font-weight: 500;
-    margin-top: 120px;
-    text-align: center;
-} */
 
 @media screen and (max-width: 600px) {
-
-    
-
     .pro-container {
         margin-bottom: 50px;
     }
@@ -73,7 +65,9 @@
         width: auto;
     }
     .card {
+        max-width: 85vw;
         width: 85vw;
+        height: 70vw;
         margin-top: 50px;
     }
 }
