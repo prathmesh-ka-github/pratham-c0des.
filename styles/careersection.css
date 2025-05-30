@@ -5,14 +5,12 @@
     text-align: center;
     margin-top: 100px;
 }
-
 .careersection {
     display: flex;
     flex-direction: row;
     width: 80%;
-    /* height: 200px; */
+    justify-content: center;
 }
-
 .mainline {
     width: 10px;
     height: 100%;
@@ -21,10 +19,9 @@
 .rightside {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     padding: 200px 0px 100px 0px;
 }
-
 .subsections {
     display: flex;
     flex-direction: row;
@@ -32,7 +29,6 @@
     min-height: 400px;
     margin: 30px 0;
 }
-
 .connectingLine {
     margin-top: 20px;
     width: 300px;
@@ -52,16 +48,13 @@
     bottom: 12px;
     left: 2px;
     position: relative;
-
 }
-
 .content {
     display: flex;
     margin-left: 20px;
     flex-direction: column;
     width: 800px;
 }
-
 .content-heading{
     font-size: 1.5em;
     line-height: normal;
