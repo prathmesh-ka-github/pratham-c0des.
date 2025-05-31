@@ -55,6 +55,49 @@
     border-radius: 10px;
 }
 
+.section-wrapper{
+    /* margin-top: 300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 440vh;
+}
+
+.projects-container {
+    position: relative;
+    /* border: 5px red solid; */
+    width: 80%;
+    height: 100%;
+}
+.projecthead-wrapper {
+    /* background-color: blueviolet; */
+    width: 100%;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-container {
+    position: absolute;
+    z-index: 3;
+    top: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.cards-wrapper{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 @media screen and (max-width: 600px) {
     .pro-container {
         margin-bottom: 50px;

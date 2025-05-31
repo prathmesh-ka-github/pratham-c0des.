@@ -10,4 +10,17 @@ function ham() {
     }
 }
 
+projectDescription = document.getElementById('project-description')
+
+document.addEventListener('scroll', (e) => {
+    const verticalScrollPosition = window.scrollY;
+    console.log("Vertical Scroll Position:", verticalScrollPosition);
+    if (verticalScrollPosition > 5188) {
+        projectDescription.innerHTML = 'Click to see all 👆🏼'
+    }
+    else {
+        projectDescription.innerHTML = '<img src="essentials/scrollanimation-crop.gif" height="40px" alt="scroll">'
+
+    }
+})
 
