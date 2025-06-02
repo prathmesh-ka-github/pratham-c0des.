@@ -71,10 +71,14 @@
     font-weight: 500;
     /* color: white; */
 }
+.flex-justify-center {
+    display: flex;
+    justify-content: center;
+}
 .first {
     display: flex;
-    padding: 140px 0px;
     justify-content: center;
+    padding: 140px 0px;
 }
 .about {
     padding: 20px 30px;
@@ -95,18 +99,17 @@
     width: 320px;
     border-radius: 30px;
 }
-.scroller__inner {
-    display: flex;
-}
 .tag-list {
-    margin: 10;
     padding-inline: 0;
     list-style: none;
     gap: 1rem;
-
 }
 .tag-list li {
-    padding: 2rem;
+    padding: 1.1rem;
+}
+.tech-inner li img {
+    /* width: 80px; */
+    height: 80px;
 }
 .scroller {
     /* border: 5px solid lime; */
@@ -116,10 +119,35 @@
     mask: linear-gradient(90deg, transparent, #090078 20%, #090078 80%, transparent);
     -webkit-mask: linear-gradient(90deg, transparent, #090078 20%, #090078 80%, transparent);
 }
+.tags-scroller-wrapper {
+    padding: 140px 0px;
+}
+.tags_scroller_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tags_scroller {
+    /* border: 5px solid lime; */
+    width: 85%;
+    overflow: hidden;
+    mask: linear-gradient(90deg, transparent, #090078 10%, #090078 90%, transparent);
+    -webkit-mask: linear-gradient(90deg, transparent, #090078 10%, #090078 90%, transparent);
+}
 .scroller .scroller__inner {
+    display: flex;
     width: max-content;
     flex-wrap: nowrap;
     animation: scroll 50s linear infinite;
+}
+.tags_scroller__inner {
+    display: flex;
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll 40s linear infinite;
+}
+.antiscroll {
+    animation: scroll 40s reverse linear infinite;
 }
 .red {
     background-color: red !important; 
@@ -129,6 +157,8 @@
         transform: translate(-50%);
     }
 }
+
+
 .projects-head {
     font-size: 2.4em;
     font-weight: 500;
@@ -173,29 +203,11 @@ ul {
     margin: 0px;
 }
 
-.tags-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 150px 0px;
-}
-.tags-container .head {
-    margin-bottom:60px;
+.flex-justify-center .head {
+    margin-bottom:20px;
     font-size: 2em;
 }
-.tags {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 1200px;
-}
-.tag {
-    margin: 5px;
-    border-radius: 10px;
-    padding: 18px;
-    border: 2px solid #0f74ee;
-}
+
 .socials {
     width: 750px;
     padding: 40px 50px;
