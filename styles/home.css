@@ -157,7 +157,12 @@
         transform: translate(-50%);
     }
 }
-
+.scroll-projects-mobileview {
+    display: none;
+}
+.scroll-projects-mobileview .projects-head {
+    padding-top: 100px;
+}
 
 .projects-head {
     font-size: 2.4em;
@@ -240,7 +245,12 @@ ul {
     align-items: center;
 }
 @media screen and (max-width:600px) {
-
+    .scroll-projects-mobileview {
+        display: block;
+    }
+    #projects {
+        display: none;
+    }
     .heading {
         font-size: 30px;
         width: 250px;
