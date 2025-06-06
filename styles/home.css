@@ -106,6 +106,10 @@
 }
 .tag-list li {
     padding: 1.1rem;
+    transition: transform 500ms;
+}
+.tag-list li:hover {
+    transform: translateY(-15px);
 }
 .tech-inner li img {
     /* width: 80px; */
