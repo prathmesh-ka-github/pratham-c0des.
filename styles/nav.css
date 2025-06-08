@@ -41,7 +41,8 @@ a {
     border-bottom: 5px solid transparent;
     transition: border 500ms;
     text-align: center;
-    border-radius: 5px
+    border-radius: 5px;
+    padding-bottom: 5px;
 }
 .nav-elements:hover {
     border-bottom: 5px solid #0000ff;

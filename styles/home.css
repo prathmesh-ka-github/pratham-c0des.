@@ -84,9 +84,9 @@
     padding: 20px 30px;
     margin-right: 90px;
     width: 700px;
-    background-color: #0f74ee;
+    /* background-color: #0f74ee; */
     border-radius: 30px;
-    box-shadow: 10px 10px 26px 11px rgba(0,0,0,0.4);
+    /* box-shadow: 10px 10px 26px 11px rgba(0,0,0,0.4); */
 }
 
 .book-img-container{
@@ -187,11 +187,11 @@
     left: 330px;
 }
 .hobbys {
-    width: 700px;
-    padding: 40px 50px;
-    background-color: #0f74ee;
+    width: auto;
+    padding: 20px 50px;
+    /* background-color: #0f74ee; */
     border-radius: 30px;
-    box-shadow: 10px 10px 26px 11px rgba(0,0,0,0.4);
+    /* box-shadow: 10px 10px 26px 11px rgba(0,0,0,0.4); */
 }
 .hobby-list {
     display: flex;
@@ -199,13 +199,13 @@
 }
 .hobby-img-container{
     cursor: pointer;
-    margin-right: 80px;
+    margin-right: 100px;
     height: max-content;
     border-radius: 30px;
     box-shadow: 10px 10px 26px 11px rgba(0,0,0,0.4);
 }
 .hobby-img{
-    width: 500px;
+    width: 450px;
     border-radius: 30px;
 }
 ul {
@@ -218,12 +218,12 @@ ul {
 }
 
 .socials {
-    width: 750px;
-    padding: 40px 50px;
-    background-color: #0f74ee;
+    width: 700px;
+    padding: 20px 20px;
+    /* background-color: #0f74ee; */
     border-radius: 30px;
-    margin-right: 100px;
-    box-shadow: 10px 10px 26px 11px rgba(0,0,0,0.4);
+    margin-right: 80px;
+    /* box-shadow: 10px 10px 26px 11px rgba(0,0,0,0.4); */
 }
 .social-img-container{
     cursor: pointer;
@@ -236,7 +236,8 @@ ul {
     border-radius: 30px;
 }
 .linkss svg{
-    transition: fill 300ms;
+    transition: fill 300ms ease-in;
+    fill: #b4b4b4;
 }
 .linkss:hover svg {
     fill: white;
