@@ -82,11 +82,9 @@
 }
 .about {
     padding: 20px 30px;
-    margin-right: 90px;
+    margin-right: 50px;
     width: 700px;
-    /* background-color: #0f74ee; */
     border-radius: 30px;
-    /* box-shadow: 10px 10px 26px 11px rgba(0,0,0,0.4); */
 }
 
 .book-img-container{
@@ -112,11 +110,9 @@
     transform: translateY(-15px);
 }
 .tech-inner li img {
-    /* width: 80px; */
     height: 80px;
 }
 .scroller {
-    /* border: 5px solid lime; */
     width: 85%;
     margin-bottom: 40px;
     overflow: hidden;
@@ -189,9 +185,7 @@
 .hobbys {
     width: auto;
     padding: 20px 50px;
-    /* background-color: #0f74ee; */
     border-radius: 30px;
-    /* box-shadow: 10px 10px 26px 11px rgba(0,0,0,0.4); */
 }
 .hobby-list {
     display: flex;
@@ -220,10 +214,8 @@ ul {
 .socials {
     width: 700px;
     padding: 20px 20px;
-    /* background-color: #0f74ee; */
     border-radius: 30px;
     margin-right: 80px;
-    /* box-shadow: 10px 10px 26px 11px rgba(0,0,0,0.4); */
 }
 .social-img-container{
     cursor: pointer;
@@ -293,9 +285,9 @@ ul {
     }
     .about {
         padding: 30px;
-        width: 300px;
+        width: 90%;
         left: 20px;
-        margin: 0 20px 0 20px;
+        margin: 0;
     }
     .projects-head {
         font-size: 30px;
@@ -316,7 +308,7 @@ ul {
     }
     .hobbys {
         padding: 30px;
-        width: 300px;
+        width: 80%;
         left: 20px;
     }
     .hobby-list {
@@ -332,9 +324,16 @@ ul {
     }
     .socials {
         padding: 30px;
-        width: 300px;
+        margin: 0;
+        width: 80%;
         left: 20px;
-        margin: 0 20px 0 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .socials p{
+        text-align: center;
     }
     .book-img-container{
         display: none;

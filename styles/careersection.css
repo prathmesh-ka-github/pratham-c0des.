@@ -61,3 +61,31 @@
     font-weight: 500;
     margin-bottom: 30px;
 }
+@media screen and (max-width:600px) {
+    .careersection{
+        width: 90%;
+    }
+    .mainline{
+        width: 7px;
+    }
+    .connectingLine{
+        height: 7px;
+        width: 250px;
+    }
+    .rightside{
+        width: 90%;
+    }
+    .connectingLine::after{
+        content: ".....";
+        font-size: 10px;
+    }
+    .content-heading{
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .content-description {
+        font-size: 0.8em;
+        line-height: normal;
+    }
+
+}
