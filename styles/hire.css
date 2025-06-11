@@ -4,10 +4,34 @@
     align-items: center;
     height: 100vh;
     background-color: #d2d1d1;
+    position: relative;
 }
 .cv-container img{
     height: 90vh;
     margin-top: 50px;
+}
+
+.cv-container a{
+    all: unset;
+    background-color: #1a0da2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    right: -160px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.cv-container a:hover{
+    background-color: #2314c0;
+}
+
+.cv-container div{
+    position: relative;
 }
 @media screen and (max-width:600px) {
     .cv-container{
@@ -17,5 +41,9 @@
         width: 100vw;
         height: 130vw;
         margin-top: 50px;
+    }
+    .cv-container a{
+        bottom: 0px;
+        right: 0px;
     }
 }
