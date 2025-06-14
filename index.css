@@ -29,9 +29,9 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 50;
+    z-index: 99;
     opacity: 1;
-    transition: all 500ms;
+    transition: all 1000ms;
 }
 
 .loader {
@@ -42,11 +42,20 @@ html {
 }
 
 .rotatingLoader {
-    width: 5em;
-    height: 5em;
+    font-family: "Tiro Devanagari Marathi", serif;
+    /* width: 5em; */
+    /* height: 5em; */
+    font-size: 2rem;
+    color: #0000ff;
     border-radius: 50%;
-    border-top: 5px solid blue;
-    animation: round 700ms linear infinite;
+    /* border-top: 5px solid blue; */
+    /* animation: round 700ms linear infinite; */
+    transition: all 200ms;
+    font-style: italic;
+    opacity: 0;
+}
+.transformtranslate {
+    transform: translateY(-120vh);
 }
 
 @keyframes round {

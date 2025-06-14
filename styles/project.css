@@ -42,9 +42,16 @@
     width: 100%;
     /* height: 100%; */
     border-radius: 10px;
+    transition: all ease 400ms;
+}
+.card:hover  a img {
+    scale: 1.1;
+    filter: brightness(0.9);
 }
 .pro-img-container {
     margin: 15px 5px 0 5px !important;
+    overflow: hidden;
+    border-radius: 10px;
 }
 ::-webkit-scrollbar {
     background: transparent;

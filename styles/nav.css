@@ -38,17 +38,17 @@ a {
 }
 .nav-elements {
     cursor: pointer;
-    border-bottom: 5px solid transparent;
+    border-bottom: 3px solid transparent;
     transition: border 500ms;
     text-align: center;
     padding: 5px 5px;
 }
 .nav-elements:hover {
-    border-bottom: 5px solid #0000ff;
+    border-bottom: 3px solid #0000ff;
 }
 
 .current {
-    border-bottom: 5px solid #0000ff;
+    border-bottom: 3px solid #0000ff;
 }
 
 .ham-links {
