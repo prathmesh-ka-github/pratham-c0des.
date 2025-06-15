@@ -352,6 +352,12 @@ ul {
     .tags {
         width: 90vw;
     }
+    .tags_scroller {
+        padding: 10px 0px;
+    }
+    .tag-list li {
+        padding: 1rem;
+    }
     .socials {
         padding: 30px;
         margin: 0;
