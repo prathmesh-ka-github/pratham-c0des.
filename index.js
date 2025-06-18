@@ -1,6 +1,6 @@
 function ham() {
     var menu = document.getElementById("ham-menu-id");
-    if (menu.style.opacity === '1'){
+    if (menu.style.opacity === '1') {
         menu.style.opacity = '0';
         menu.style.top = '-300px';
     }
@@ -11,11 +11,18 @@ function ham() {
 }
 
 projectDescription = document.getElementById('project-description')
+const elementposition = document.getElementById('getposition')
+
+let rect = elementposition.getBoundingClientRect();
+const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+const position = {
+    top: rect.top + scrollTop,
+};
 
 document.addEventListener('scroll', (e) => {
     const verticalScrollPosition = window.scrollY;
-    console.log("Vertical Scroll Position:", verticalScrollPosition);
-    if (verticalScrollPosition > 5188) {
+    // console.log("Vertical Scroll Position:", verticalScrollPosition);
+    if (verticalScrollPosition > position.top) {
         projectDescription.innerHTML = 'Click to see all 👆🏼'
     }
     else {
