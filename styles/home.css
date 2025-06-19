@@ -159,7 +159,7 @@
 .tags_scroller {
     /* border: 5px solid lime; */
     padding: 15px 0px;
-    width: 85%;
+    width: 80%;
     overflow: hidden;
     mask: linear-gradient(90deg, transparent, #090078 10%, #090078 90%, transparent);
     -webkit-mask: linear-gradient(90deg, transparent, #090078 10%, #090078 90%, transparent);
