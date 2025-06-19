@@ -8,6 +8,7 @@ Deployed on github pages.
 
 # TODO CHK LIST: 
 1. ~~Projects on main page with X-Scrollcards~~  
-2. ~~Add a skills/technologies section belowabout section.~~
-3. ~~Add a My journey section after the about section.~~ 
-4. ~~Convert all font sizes to em from px~~
+1. ~~Add a skills/technologies section belowabout section.~~
+1. ~~Add a My journey section after the about section.~~ 
+1. ~~Convert all font sizes to em from px~~
+1. Change resumme bullet points.
