@@ -12,3 +12,4 @@ Deployed on github pages.
 1. ~~Add a My journey section after the about section.~~ 
 1. ~~Convert all font sizes to em from px~~
 1. Change resumme bullet points.
+1. Refactor projects code for cards.
