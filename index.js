@@ -9,5 +9,3 @@ function ham() {
         menu.style.top = '60px';
     }
 }
-
-
