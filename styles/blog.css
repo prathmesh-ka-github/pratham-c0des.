@@ -35,16 +35,22 @@
     font-size: 20px;
     cursor: pointer;
 }
-
-.blog-date {
-    color: #ccc;
-    font-size: 15px;
+.blog-name{
+    font-size: 20px;
+    transition: font-size ease 500ms;
+    width: 90%;
 }
 
+.blog-date {
+    color: #939393;
+    font-size: 15px;
+    font-weight: 200;
+}
 
 .blog-description {
     font-size: 0px;
     transition: all ease 500ms;
+    text-align: start;
 }
 .show-blog {
     font-size: 15px;
@@ -56,5 +62,20 @@
 }
 
 code {
-    color: red;
+    display: block;
+    padding: 0;
+    border-radius: 10px;
+    transition: padding ease 200ms;
+    background-color: transparent;
+}
+
+.big-title {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.hide-code {
+    padding: 40px 20px;
+    color: green;
+    background-color: black;
 }
