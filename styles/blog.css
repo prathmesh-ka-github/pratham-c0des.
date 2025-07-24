@@ -106,3 +106,23 @@ code {
     text-decoration: underline;
     color: blue;
 }
+
+@media screen and (max-width:600px) {
+    .blog{
+        padding: 10px 20px;
+        width: 90%;
+    }
+    .blog-title{
+        flex-direction: column;
+    }
+    .blog-name {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .blog-date {
+        width: 100%;
+    }
+    .showimg {
+        width: 80%;
+    }
+}
