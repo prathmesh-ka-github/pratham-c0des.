@@ -88,6 +88,13 @@
     align-items: center;
 }
 
+.projects-head {
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 120px;
+    text-align: center;
+}
+
 .cards-container {
     position: absolute;
     z-index: 3;
