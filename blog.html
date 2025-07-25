@@ -67,7 +67,7 @@
         <div class="blog">
             <div class="blog-title" onclick="showblog(2)">
                 <div id="blogt2" class="blog-name">Astro JS: The New Kid On The Block</div>
-                <div class="blog-date">2,3k Views | July 23, 2025</div>
+                <div class="blog-date">2.3k Views | July 23, 2025</div>
             </div>
             <div id="blog2" class="blog-description">
                 <p>
@@ -224,29 +224,6 @@
             loader.style.display = "none";
         },400);
     })
-
-    function showblog(id){
-        if (document.getElementById(`blog${id}`)) {
-            blogid = document.getElementById(`blog${id}`)
-            blogid.classList.toggle('show-blog')
-        }
-        if (document.getElementById(`code${id}`)) {
-            code = document.getElementById(`code${id}`)
-            code.classList.toggle("hide-code")
-        }
-        if (document.getElementById(`blogt${id}`)) {
-            blogtid = document.getElementById(`blogt${id}`)
-            blogtid.classList.toggle('big-title')
-        }
-        if (document.getElementById(`blogimg${id}`)) {
-            allblogimgs = document.querySelectorAll('.blogimg')
-            // blogimgid = document.getElementById(`blogimg${id}`)
-            // blogimgid.classList.toggle('showimg')
-            allblogimgs.forEach(blogimg => {
-                blogimg.classList.toggle('showimg')
-            });
-            console.log(allblogimgs);
-        }
-    }
 </script>
+<script src="./blog.js"></script>
 </html>
