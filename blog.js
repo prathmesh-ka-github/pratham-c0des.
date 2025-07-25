@@ -25,7 +25,7 @@ async function showblog(id){
         console.log('Dont count the view..... YET');
     }else {
 
-        fetch('http://localhost:3000/blogviews').then( res => {
+        fetch('https://dripanime.vercel.app/blogviews').then( res => {
             if (!res.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -33,7 +33,7 @@ async function showblog(id){
         }).then( data => {
             data.forEach(d => {
                 if (d.blog == id) {
-                    fetch('http://localhost:3000/updateblogviews?number=1', {method: 'POST'}).then( res => {
+                    fetch('https://dripanime.vercel.app/updateblogviews?number=1', {method: 'POST'}).then( res => {
                         if (!res.ok) {
                             throw new Error(`HTTP error! status: ${response.status}`);
                         }
