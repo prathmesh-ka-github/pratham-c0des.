@@ -20,32 +20,69 @@ async function showblog(id){
         });
     }
     // document.cookie = "blog1=true; expires=Thu, 17 Dec 2025 12:00:00 UTC; path=/";
-    // document.cookie = "username=John Smith; expires=Thu, 18 Dec 2033 12:00:00 UTC; path=/";
-    // document.cookie = "name=Tim Cook; expires=Thu, 18 Dec 2033 12:00:00 UTC; path=/";
-    // document.cookie = "name; expires=Thu, 18 Dec 2033 12:00:00 UTC; path=/";
+    // document.cookie = "blog2=true; expires=Thu, 17 Dec 2025 12:00:00 UTC; path=/";
     // const now = new Date();
     // console.log(now.getHours());
-    // let allcookies = decodeURIComponent(document.cookie);
-    // let cookiearry = allcookies.split(';')
-    // console.log(allcookies);
-    
-    // fetch('http://localhost:3000/blogviews').then( res => {
-    //     if (!res.ok) {
-    //         throw new Error(`HTTP error! status: ${response.status}`);
-    //     }
-    //     return res.json()
-    // }).then( data => {
-    //     data.forEach(d => {
-    //         if (d.blog == id) {
-    //             console.log(d)
-    //         }
-    //     })
-    //     console.log(data)
-    // })
+
+
+    fetch('http://localhost:3000/blogviews').then( res => {
+        if (!res.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return res.json()
+    }).then( data => {
+        data.forEach(d => {
+            if (d.blog == id) {
+                // console.log(d)
+                // UPDATE VIEWS
+            }
+        })
+        // console.log(data)
+    })
+    if (checkBlogCookie(id)) {
+        console.log('Dont count the view');
+    }else {
+        console.log('Update the view count!');
+    }
+}
+
+function checkBlogCookie(blogid){
+    let cookies = getCookies()
+    let blog = 'blog'+ blogid
+    let blogexists = false
+    cookies.forEach(cookie => {
+        // console.log(cookie);
+        if (cookie.name === blog) {
+            blogexists = true
+        }
+    })
+    if (blogexists) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+function getCookies() {
+    let allcookies = decodeURIComponent(document.cookie);
+    let cookiearry = allcookies.split(';')
+
+    let cookies = []
+    cookiearry.forEach(c => {
+        cshard = c.split('=')
+        const cookiename = cshard[0].trim()
+        const cookieval = cshard[1].trim()
+        cshardobj = {
+            name : cookiename,
+            val : cookieval
+        }
+        cookies.push(cshardobj)
+    })
+    return cookies
 }
 
 async function getViews(){
-    fetch('http://localhost:3000/blogviews').then( res => {
+    fetch('https://dripanime.vercel.app/blogviews').then( res => {
         if (!res.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
