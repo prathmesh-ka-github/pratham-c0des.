@@ -21,28 +21,33 @@ async function showblog(id){
     }
     // document.cookie = "blog1=true; expires=Thu, 17 Dec 2025 12:00:00 UTC; path=/";
     // document.cookie = "blog2=true; expires=Thu, 17 Dec 2025 12:00:00 UTC; path=/";
-    // const now = new Date();
-    // console.log(now.getHours());
-
-
-    fetch('http://localhost:3000/blogviews').then( res => {
-        if (!res.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return res.json()
-    }).then( data => {
-        data.forEach(d => {
-            if (d.blog == id) {
-                // console.log(d)
-                // UPDATE VIEWS
-            }
-        })
-        // console.log(data)
-    })
     if (checkBlogCookie(id)) {
-        console.log('Dont count the view');
+        console.log('Dont count the view..... YET');
     }else {
-        console.log('Update the view count!');
+
+        fetch('http://localhost:3000/blogviews').then( res => {
+            if (!res.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return res.json()
+        }).then( data => {
+            data.forEach(d => {
+                if (d.blog == id) {
+                    fetch('http://localhost:3000/updateblogviews?number=1', {method: 'POST'}).then( res => {
+                        if (!res.ok) {
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+                        else {
+                            let blogname = 'blog'+id
+                            setCookieInTwoHours(blogname,'true')
+                            getViews()
+                            console.log("View counted for blog"+ id);
+                        }
+                        return res.json()
+                    })
+                }
+            })
+        })
     }
 }
 
@@ -51,7 +56,6 @@ function checkBlogCookie(blogid){
     let blog = 'blog'+ blogid
     let blogexists = false
     cookies.forEach(cookie => {
-        // console.log(cookie);
         if (cookie.name === blog) {
             blogexists = true
         }
@@ -66,19 +70,25 @@ function checkBlogCookie(blogid){
 function getCookies() {
     let allcookies = decodeURIComponent(document.cookie);
     let cookiearry = allcookies.split(';')
+    let cookies = [ ]
 
-    let cookies = []
-    cookiearry.forEach(c => {
-        cshard = c.split('=')
-        const cookiename = cshard[0].trim()
-        const cookieval = cshard[1].trim()
-        cshardobj = {
-            name : cookiename,
-            val : cookieval
-        }
-        cookies.push(cshardobj)
-    })
-    return cookies
+    if (allcookies == '') {
+        // console.log('No cookies');
+        return [ ]
+    }
+    else {
+        cookiearry.forEach(c => {
+            cshard = c.split('=')
+            const cookiename = cshard[0].trim()
+            const cookieval = cshard[1].trim()
+            cshardobj = {
+                name : cookiename,
+                val : cookieval
+            }
+            cookies.push(cshardobj)
+        })
+        return cookies
+    }
 }
 
 async function getViews(){
@@ -93,6 +103,13 @@ async function getViews(){
             displayview.innerText = d.views
         })
     })
-    // view1
 }
 getViews()
+
+function setCookieInTwoHours(name, value) {
+    const date = new Date();
+    // Add 2 hours (2 * 60 minutes * 60 seconds * 1000 milliseconds)
+    date.setTime(date.getTime() + (1 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
