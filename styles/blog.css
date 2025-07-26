@@ -37,7 +37,7 @@
 }
 .blog-name{
     font-size: 20px;
-    transition: font-size ease 500ms;
+    transition: font-size ease 1000ms;
     width: 80%;
 }
 
