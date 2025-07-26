@@ -28,7 +28,7 @@
 <body id="home">
     <navbar class="nav-bar-container">
         <div class="profile">
-            <a>
+            <a href="#home">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 532 532"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                     <circle cx="270.75986" cy="260.93427" r="86.34897" fill="#ffb6b6" />
@@ -55,18 +55,11 @@
             <div class="ham-menu"><img onclick="ham()" src="essentials/menu-light.png" alt="menu"></div>
         </div>
         <div class="ham-links" id="ham-menu-id">
-            <a href="#home" onclick="ham()" class="ham-elements">
-                <div>HOME</div>
-            </a>
-            <a href="#projects" onclick="ham()" class="ham-elements">
-                <div>PROJECTS</div>
-            </a>
-            <a href="#socials" onclick="ham()" class="ham-elements">
-                <div>CONNECT</div>
-            </a>
-            <a href="./hire.html" class="ham-elements">
-                <div>HIRE ME</div>
-            </a>
+            <a href="#home" onclick="ham()"><div class="ham-elements current">HOME</div></a>
+            <a href="#projects-phone" onclick="ham()"><div class="ham-elements">PROJECTS</div></a>
+            <a href="#socials" onclick="ham()"><div class="ham-elements">CONNECT</div></a>
+            <a href="./blog.html" onclick="ham()"><div class="ham-elements">BLOG</div></a>
+            <a href="./hire.html"><div class="ham-elements">HIRE ME</div></a>
         </div>
     </navbar>
     <main class="main-container">
@@ -124,7 +117,7 @@
             </div>
         </div>
         <div class="mobileview">
-            <div class="projects-head">
+            <div id="projects-phone" class="projects-head">
                 <a href="./projects.html">MY PROJECTS</a>
                 <p class="projects-subtxt">Click to see all 👆🏼</p>
             </div>
