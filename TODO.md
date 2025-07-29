@@ -8,4 +8,14 @@
 1. Connect to dripanime views api and display views on respective blogs.
 1. Update the view count using api and check cookie and set cookie to 3 hours exp.
 1. Add instruction toast notification with localstorages.
-1.
+
+
+
+
+# TODO CHK LIST: 
+1. ~~Projects on main page with X-Scrollcards~~  
+1. ~~Add a skills/technologies section belowabout section.~~
+1. ~~Add a My journey section after the about section.~~ 
+1. ~~Convert all font sizes to em from px~~
+1. Change resumme bullet points.
+1. Refactor projects code for cards.
