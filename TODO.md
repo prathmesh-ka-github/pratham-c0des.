@@ -10,8 +10,6 @@
 1. Add instruction toast notification with localstorages.
 
 
-
-
 # TODO CHK LIST: 
 1. ~~Projects on main page with X-Scrollcards~~  
 1. ~~Add a skills/technologies section belowabout section.~~
