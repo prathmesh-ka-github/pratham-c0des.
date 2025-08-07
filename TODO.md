@@ -8,7 +8,8 @@
 1. Connect to dripanime views api and display views on respective blogs.
 1. Update the view count using api and check cookie and set cookie to 3 hours exp.
 1. Add instruction toast notification with localstorages.
-
+1. Update the technologies(see github readme)
+1. Add ASCIINATOR project
 
 # TODO CHK LIST: 
 1. ~~Projects on main page with X-Scrollcards~~  
