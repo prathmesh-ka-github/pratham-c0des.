@@ -1,6 +1,8 @@
 # Personel portfolio of Pratham c0des
 
-click me - https://www.prathamc0des.dev/
+A responsive and modern personal portfolio website built to showcase my projects, skills, and experience. Developed using HTML, CSS, and JavaScript, this site serves as a central hub for my work and professional presence online. 
 
-Made with vanilla HTML, CSS and JS.
+### https://www.prathamc0des.dev/
+
+Made with just vanilla HTML, CSS and JS.
 Deployed on github pages.
