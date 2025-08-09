@@ -10,6 +10,7 @@
 1. Add instruction toast notification with localstorages.
 1. Update the technologies(see github readme)
 1. Add ASCIINATOR project
+1. Add a blog section in index page
 
 # TODO CHK LIST: 
 1. ~~Projects on main page with X-Scrollcards~~  
