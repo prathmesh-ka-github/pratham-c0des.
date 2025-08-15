@@ -206,141 +206,16 @@
         </div>
         <div class="blog">
             <div class="blog-title" onclick="showblog(2)">
-                <div id="blogt2" class="blog-name">Astro JS: The New Kid On The Block</div>
-                <div class="blog-date"><span id="view2"></span> Views | July 23, 2025</div>
+                <div id="blogt2" class="blog-name">The Arch Shift: Why I Switched to Arch Linux (And Why You Should Too)</div>
+                <div class="blog-date"><span id="view2"></span> Views | Aug 13, 2025</div>
             </div>
             <div id="blog2" class="blog-description">
-                <p>
-                    As web developers, we strive to build the fastest and most efficient websites possible. This means finding the right tools and technologies to help achieve our performance goals. 
-                </p>
-                <p>
-                    A new tool that has come onto the scene relatively recently is Astro JS. Astro is a new static site generator that has emerged as a popular choice among performance-driven web developers. According to their website, “Astro builds fast content sites, powerful web applications, dynamic server APIs, and everything in between.” Due to their innovative front-end architecture approach, Astro allows creators to generate highly performant websites with minimal overhead.
-                </p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quis aperiam, ex aliquam corporis necessitatibus rerum beatae quae, impedit quisquam accusamus modi? Distinctio sequi pariatur blanditiis accusamus dolores delectus modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deserunt maiores saepe modi obcaecati illum ratione explicabo ab libero at unde iusto sint hic, nesciunt quibusdam corporis a et quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatem veniam accusantium consequatur a quasi totam! Et excepturi distinctio porro enim eos non facilis voluptas natus nesciunt, maiores perferendis fugit!</p>
                 <br>
                 <div class="imgcontainer">
-                    <img class="blogimg" id="blogimg1" src="blog_essentials/astrojs.png" alt="">
-                </div> 
-                <br>
-                <p>
-                    In this article, we’ll take a deep dive into Astro. We’ll understand Astro’s origin, the primary use cases, unique features, and whether or not it is worth your time. 
-                </p>
-                <br>
-                <h2>A History of Innovation</h2>
-                <p>
-                    Astro was created in 2021 by Fred K. Schott, who was concerned about the increasing complexity and bloat of existing frontend frameworks. He believed simple static sites didn’t need all the bells and whistles and should load quickly and efficiently. So, he created a static site generator to meet these needs.
-                </p>
-                <p>
-                    Performance and simplicity were essential to Fred when building Astro. He didn’t want to compete with popular frontend frameworks but rather collaborate with them. This led to the BYOF (Bring Your Own Framework) concept, which allows developers to reuse components from React, Svelte, Vue, and other frameworks while benefiting from a static site’s performance advantages.
-                </p>
-                <p>
-                    Another key innovation is an architectural concept called islands. We’ll explore this in more detail later.
-                </p>
-                <p>
-                    How is he going to maintain it going forward? It has been open sourced to the developer community. Their website states, “Astro is and always will be free.” So, as long as the community can continue to see the value in Astro, it will continue to evolve and become more valuable over time.
-                </p>
-                <br>
-                <h2>A Swiss Army Knife for Content-Driven Websites</h2>
-                Astro can be used for a wide range of content-driven websites, including:
-                <br>
-                <ul>
-                    <li><b>Blogs:</b> create and maintain a blog with high-performance and SEO-friendly permalinks</li>
-                    <li><b>Marketing:</b> promote your products or services with a beautiful and engaging marketing site</li>
-                    <li><b>Agency websites:</b> an excellent choice for agencies looking to create and maintain multiple sites for their clients</li>
-                    <li><b>Portfolios:</b> stunning portfolios to showcase your work in the best possible light.</li>
-                </ul>
-                <p>
-                    If you notice the underlying theme here, it’s communicating content with the world. You need the bare minimum functionality for each use case, want it to look good on any device, and want pages to load quickly. Astro is perfect for this.
-                </p>
-                <p>Astro has many great themes to help you get up and running quickly.</p>
-                <br>
-                <div class="imgcontainer">
-                    <img class="blogimg" id="blogimg1" src="blog_essentials/astrothemes.webp" alt="blog theme">
-                    <a href="https://astro.build/themes/" target="_blank">https://astro.build/themes/</a>
+                    <img class="blogimg" id="blogimg2" src="blog_essentials/archlinux.png" alt="blog theme">
+                    <a href="https://archlinux.org/" target="_blank">https://archlinux.org/</a>
                 </div>
-                <br>
-                <br>
-                <h2>What Makes It Special?</h2>
-                <h3>Island architecture: A performance breakthrough</h3>
-                <p>
-                    I couldn’t create an Astro article without mentioning island architecture. The island architecture is the foundation of what makes Astro unique. What is it? It divides web pages into separate components, each of which can be rendered on the server or in the browser, depending on what is faster. This allows Astro to generate highly performant websites with minimal overhead.
-                </p>
-                <br>
-                <div class="imgcontainer">
-                    <img class="blogimg" id="blogimg1" src="blog_essentials/astroisland.webp" alt="blog theme">
-                    <a href="https://jasonformat.com/islands-architecture/" target="_blank">https://jasonformat.com/islands-architecture/</a>
-                </div>
-                <br>
-                <p>
-                    A key benefit of this architecture is that components can be loaded in parallel. This means the browser can load multiple components simultaneously and hydrate them in isolation. The load time of a page will be improved significantly, especially for pages with a lot of JavaScript.
-                </p>
-                <p>
-                    Astro gives developers more control over how their pages are rendered. For example, <a href="https://docs.astro.build/en/reference/directives-reference/#client-directives">client directives</a> allow an explicit order in which you render your components. Say you have a JavaScript-intensive carousel at the bottom of your page that is not entirely essential to the user experience. You can render this component only when the user scrolls to that component. Without that component being a part of the first load, the initial loading of the page will be significantly faster (improved Time-to-Interactive metric).
-                </p>
-                <p>
-                    A few other perks of Astro’s island architecture are reduced bandwidth usage and improved Search Engine Optimization (SEO).
-                </p>
-                <ul>
-                    <li><b>Reduced Bandwidth:</b> Astro pages are typically smaller than pages generated by other SSGs. Since Astro only ships the JavaScript needed for each island, page load times over slow or unstable connections will still be optimal.</li>
-                    <li><b>Search Engine Optimization:</b> Since these web pages are so light, they allow each page to be crawled and indexed more quickly. This leads to better SEO performance.</li>
-                </ul>
-                <br>
-                <h2>Simplicity and familiarity</h2>
-                <p>
-                    Astro was designed with ease of use in mind. Because the syntax is similar to existing frontend frameworks, you can get started quickly if you know HTML, CSS, and JS. Also, as mentioned before, if you want to use components you have already written in other frameworks, thanks to the component-based architecture and BYOF (Bring Your Own Framework), you can do that. This makes it easy to migrate existing websites to Astro or build hybrid websites that use many different components from different frameworks.
-                </p>
-                <p>
-                    Overall, Astro is a very easy-to-use SSG well-suited for beginners and experienced developers.
-                </p>
-                <br>
-                <h2>Deep customizability</h2>
-                <p>
-                    Astro is designed to be highly customizable. It can be used with any front-end framework, build tool, or hosting provider. This makes it easy to tailor Astro to your specific needs and preferences.
-                </p>
-                <br>
-                <div class="imgcontainer">
-                    <img class="blogimg" id="blogimg1" src="blog_essentials/astrointegration.webp" alt="blog theme">
-                    <a href="https://astro.build/integrations/" target="_blank">https://astro.build/integrations/</a>
-                </div>
-                <br>
-                <p>
-                    Astro is designed to be highly customizable. It can be used with any front-end framework, build tool, or hosting provider. This makes it easy to tailor Astro to your specific needs and preferences.
-                </p>
-                <p>
-                    Astro also has a rich ecosystem of third-party plugins and integrations. This means you can find plugins for anything you need, from adding authentication to your site to generating dynamic content.
-                </p>
-                <p>
-                    Astro is a great choice if you’re looking for a highly customizable and extensible static site generator.
-                </p>
-                <br>
-                <h2>
-                    Active and engaged community
-                </h2>
-                <p>
-                    Astro has a vibrant and active community of contributors. This community is supported by the Astro Community Awards program, which rewards top contributors with financial compensation. In 2022, the <a href="https://astro.build/blog/community-awards-22/">Astro Community Awards program</a> paid almost $8500 to contributors.
-                </p>
-                <p>
-                    The Astro community is also very active on <a href="https://discord.com/invite/grF4GTXXYm">Discord</a>. The Discord server is a great place to ask questions, get help, and collaborate with other Astro users.
-                </p>
-                <br>
-                <h2>The Conclusion</h2>
-                <p>
-                    So the question remains: is Astro worth learning? If you’re a web developer who wants to build fast, performant, customizable static sites, then the answer is a resounding yes.
-                </p>
-                <p>
-                    Astro is easy to learn and use, even if you’re unfamiliar with other static site generators. Its island architecture and BYOF (Bring Your Own Framework) pattern allow you to build websites that meet your needs.Astro also has a vibrant and active community of contributors, which means a wealth of support is available if you need it.
-                </p>
-                <p>
-                    I hope you’ve enjoyed learning a bit about Astro and how you can use it to improve your static sites today! <br><br> Thank you.
-                </p>
-                <br>
-                <h2>Helpful Resources:</h2>
-                <ul>
-                    <li><a href="https://astro.build">Main Astro website</a></li>
-                    <li><a href="https://docs.astro.build/en/getting-started/">Getting started with Astro</a></li>
-                    <li><a href="https://docs.astro.build/en/concepts/islands/">Islands Architecture</a></li>
-                    <li><a href="https://docs.astro.build/en/install-and-setup/">Install Astro</a></li>
-                    <li><a href="https://docs.astro.build/en/guides/integrations-guide/">Astro Integrations</a></li>
-                </ul>
             </div>
         </div>
     </div>

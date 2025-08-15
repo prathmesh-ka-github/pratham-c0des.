@@ -54,6 +54,7 @@
     font-size: 0px;
     transition: all ease 500ms;
     text-align: start;
+    width: 100%;
 }
 .show-blog {
     font-size: 18px;
