@@ -258,11 +258,12 @@ ul {
     border-radius: 30px;
 }
 .linkss svg{
-    transition: fill 300ms ease-in;
-    fill: #b4b4b4;
+    transition: fill 200ms ease-in, transform 300ms ease;
+    fill: white;
 }
 .linkss:hover svg {
-    fill: white;
+    fill: black;
+    transform: translateY(-5px);
 }
 .linkss-container{
     display: flex;
