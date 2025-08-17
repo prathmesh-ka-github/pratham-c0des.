@@ -223,7 +223,7 @@
 }
 .hobby-img-container{
     cursor: pointer;
-    margin-right: 100px;
+    margin-left: 100px;
     height: max-content;
     border-radius: 30px;
     box-shadow: 10px 10px 26px 11px rgba(0,0,0,0.4);
