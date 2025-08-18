@@ -411,4 +411,18 @@ ul {
     .linkss-container{
         flex-direction: column;
     }
+    #blog {
+        flex-direction: column-reverse;
+    }
+    .blog-heading {
+        margin: 0;
+        padding: 0px;
+        width: 100%;
+    }
+    .blog-wrapper {
+        width: auto;
+        margin: 0;
+        margin-top: 50px;
+        height: 50vh;
+    }
 }
