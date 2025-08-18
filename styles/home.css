@@ -249,7 +249,7 @@ ul {
 .blog-heading h1 {
     margin-bottom: 0px;
 }
-.blog-wrapper {
+.landing-blog-wrapper {
     width: 700px;
     height: 300px;
     overflow: scroll;
@@ -262,8 +262,7 @@ ul {
 .blogcontainer {
     background-color: white;
     border-radius: 30px;
-    padding: 10px;
-    padding-left: 40px;
+    padding: 10px 25px;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -411,7 +410,7 @@ ul {
     .linkss-container{
         flex-direction: column;
     }
-    #blog {
+    #landingblog {
         flex-direction: column-reverse;
     }
     .blog-heading {
@@ -419,10 +418,11 @@ ul {
         padding: 0px;
         width: 100%;
     }
-    .blog-wrapper {
+    .landing-blog-wrapper {
         width: auto;
-        margin: 0;
+        margin: 0px 20px;
         margin-top: 50px;
+        padding: 20px ;
         height: 50vh;
     }
 }
