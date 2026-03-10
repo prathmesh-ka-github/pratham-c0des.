@@ -223,7 +223,7 @@
 }
 .hobby-img-container{
     cursor: pointer;
-    margin-right: 100px;
+    margin-left: 100px;
     height: max-content;
     border-radius: 30px;
     box-shadow: 10px 10px 26px 11px rgba(0,0,0,0.4);
@@ -239,6 +239,32 @@ ul {
 .flex-justify-center .head {
     margin-bottom:20px;
     font-size: 2em;
+}
+
+.blog-heading {
+    padding: 50px;
+    margin-left: 100px;
+    text-align: center;
+}
+.blog-heading h1 {
+    margin-bottom: 0px;
+}
+.landing-blog-wrapper {
+    width: 600px;
+    height: 300px;
+    overflow: scroll;
+    padding: 20px 30px;
+    color: black;
+    box-shadow: 10px 10px 26px 11px rgba(0, 0, 0, 0.199);
+    border-radius: 30px;
+}
+
+.blogcontainer {
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .socials {
@@ -258,11 +284,12 @@ ul {
     border-radius: 30px;
 }
 .linkss svg{
-    transition: fill 300ms ease-in;
-    fill: #b4b4b4;
+    transition: fill 200ms ease-in, transform 300ms ease;
+    fill: white;
 }
 .linkss:hover svg {
-    fill: white;
+    fill: black;
+    transform: translateY(-5px);
 }
 .linkss-container{
     display: flex;
@@ -382,5 +409,20 @@ ul {
     }
     .linkss-container{
         flex-direction: column;
+    }
+    #landingblog {
+        flex-direction: column-reverse;
+    }
+    .blog-heading {
+        margin: 0;
+        padding: 0px;
+        width: 100%;
+    }
+    .landing-blog-wrapper {
+        width: auto;
+        margin: 0px 20px;
+        margin-top: 50px;
+        padding: 20px ;
+        height: 50vh;
     }
 }

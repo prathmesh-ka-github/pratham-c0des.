@@ -1,6 +1,6 @@
 // import { getViews } from "./viewsAPI"
 
-async function showblog(id){
+async function showblog(id) {
     if (document.getElementById(`blogt${id}`)) {
         blogtid = document.getElementById(`blogt${id}`)
         blogtid.classList.toggle('big-title')
@@ -23,25 +23,25 @@ async function showblog(id){
     // document.cookie = "blog2=true; expires=Thu, 17 Dec 2025 12:00:00 UTC; path=/";
     if (checkBlogCookie(id)) {
         console.log('Dont count the view..... YET');
-    }else {
+    } else {
 
-        fetch('https://dripanime.vercel.app/blogviews').then( res => {
+        fetch('https://dripanime.vercel.app/blogviews').then(res => {
             if (!res.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             return res.json()
-        }).then( data => {
+        }).then(data => {
             data.forEach(d => {
                 if (d.blog == id) {
-                    fetch('https://dripanime.vercel.app/updateblogviews?number=1', {method: 'POST'}).then( res => {
+                    fetch('https://dripanime.vercel.app/updateblogviews?number=1', { method: 'POST' }).then(res => {
                         if (!res.ok) {
                             throw new Error(`HTTP error! status: ${response.status}`);
                         }
                         else {
-                            let blogname = 'blog'+id
-                            setCookieInTwoHours(blogname,'true')
+                            let blogname = 'blog' + id
+                            setCookieInTwoHours(blogname, 'true')
                             getViews()
-                            console.log("View counted for blog"+ id);
+                            console.log("View counted for blog" + id);
                         }
                         return res.json()
                     })
@@ -51,9 +51,9 @@ async function showblog(id){
     }
 }
 
-function checkBlogCookie(blogid){
+function checkBlogCookie(blogid) {
     let cookies = getCookies()
-    let blog = 'blog'+ blogid
+    let blog = 'blog' + blogid
     let blogexists = false
     cookies.forEach(cookie => {
         if (cookie.name === blog) {
@@ -70,11 +70,11 @@ function checkBlogCookie(blogid){
 function getCookies() {
     let allcookies = decodeURIComponent(document.cookie);
     let cookiearry = allcookies.split(';')
-    let cookies = [ ]
+    let cookies = []
 
     if (allcookies == '') {
         // console.log('No cookies');
-        return [ ]
+        return []
     }
     else {
         cookiearry.forEach(c => {
@@ -82,8 +82,8 @@ function getCookies() {
             const cookiename = cshard[0].trim()
             const cookieval = cshard[1].trim()
             cshardobj = {
-                name : cookiename,
-                val : cookieval
+                name: cookiename,
+                val: cookieval
             }
             cookies.push(cshardobj)
         })
@@ -91,13 +91,13 @@ function getCookies() {
     }
 }
 
-async function getViews(){
-    fetch('https://dripanime.vercel.app/blogviews').then( res => {
+async function getViews() {
+    fetch('https://dripanime.vercel.app/blogviews').then(res => {
         if (!res.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         return res.json()
-    }).then( data => {
+    }).then(data => {
         data.forEach(d => {
             const displayview = document.getElementById(`view${d.blog}`)
             displayview.innerText = d.views
